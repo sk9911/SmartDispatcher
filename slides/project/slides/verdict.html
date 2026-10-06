@@ -1,0 +1,31 @@
+<section id="verdict" data-transition="fade" style="background:#EEF0F3;color:#14213D;font-family:'IBM Plex Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:32px">
+<div style="display:flex;flex-direction:column;gap:12px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#A85A16">AI vs physics · stress test · caveats</p>
+<h2 style="font-family:'Source Serif 4', Georgia, serif;font-size:56px;font-weight:600;line-height:1.1;color:#14213D">Who wins, where it breaks, what to watch</h2>
+</div>
+<div style="display:flex;gap:32px">
+<div style="flex:1;display:flex;flex-direction:column;gap:16px;background:#FBFAF6;padding:40px;border-radius:16px;border-top:6px solid #E08A2E">
+<h3 style="font-size:32px;font-weight:600;color:#14213D">Who's who</h3>
+<p style="font-size:26px;line-height:1.35;color:#2D3748"><b>AI:</b> GraphCast (DeepMind), Pangu-Weather (Huawei)</p>
+<p style="font-size:26px;line-height:1.35;color:#2D3748"><b>Physics:</b> IFS HRES (ECMWF)</p>
+<p style="font-size:26px;line-height:1.35;color:#2D3748"><b>Hybrid:</b> NeuralGCM. Its 25-member ensemble plan, 121 kg at 120 h, beats every single forecast.</p>
+<p style="font-size:26px;line-height:1.35;color:#2D3748"><b>Baseline:</b> persistence, today's weather held fixed</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:16px;background:#FBFAF6;padding:40px;border-radius:16px;border-top:6px solid #2F6690">
+<h3 style="font-size:32px;font-weight:600;color:#14213D">Record-jet night, 9 Feb 2020</h3>
+<p style="font-size:26px;line-height:1.35;color:#2D3748">Fastest eastbound crossing in the set: 281 min vs 319 min typical.</p>
+<p style="font-size:26px;line-height:1.35;color:#2D3748">12–48 h: IFS HRES matched the hindsight plan (0 kg).</p>
+<p style="font-size:26px;line-height:1.35;color:#2D3748">120 h: GraphCast 193 kg, Pangu 325 kg, IFS HRES 492 kg.</p>
+<p style="font-size:26px;line-height:1.35;color:#2D3748">Persistence: up to 2.8 t.</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:16px;background:#FBFAF6;padding:40px;border-radius:16px;border-top:6px solid #8A93A3">
+<h3 style="font-size:32px;font-weight:600;color:#14213D">Read before quoting</h3>
+<p style="font-size:26px;line-height:1.35;color:#2D3748">The 1.5° grid blunts HRES's 9 km detail and the jet core.</p>
+<p style="font-size:26px;line-height:1.35;color:#2D3748">AI sources are trained on ERA5 and scored against it, which may favour them.</p>
+<p style="font-size:26px;line-height:1.35;color:#2D3748">One route, one aircraft, two winter months: spread, not significance.</p>
+</div>
+</div>
+<p style="font-size:32px;line-height:1.35;color:#14213D;border-left:6px solid #E08A2E;padding:4px 0 4px 28px">For dispatch, 0–3 days out, AI and physics forecasts are equal. The AI edge appears at 5 days, and part of it may be a scoring effect.</p>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#6A7179">Source: reports/report.html and data/results/*.parquet. The ERA5 scoring caveat is our reading, not a claim in the report.</p>
+<aside>GraphCast and Pangu-Weather are pure machine-learning models trained on ERA5. IFS HRES is ECMWF's physics model. NeuralGCM is a hybrid, tested in a reduced add-on. On the 9 February 2020 record jet night, the forecasts held up to 72 hours; at 5 days IFS HRES lost 492 kg on that one flight. Caveats: everything runs on a coarse 1.5 degree grid, the AI models were trained on the same ERA5 data used as the truth, and the sample is one route, one aircraft and two months.</aside>
+</section>

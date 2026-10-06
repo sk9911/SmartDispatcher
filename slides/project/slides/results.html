@@ -1,0 +1,45 @@
+<section id="results" data-transition="fade" style="background:#F7F5EF;color:#14213D;font-family:'IBM Plex Sans', Arial, sans-serif;padding:128px 128px 160px">
+<p style="position:absolute;left:128px;top:128px;width:1664px;font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#A85A16">Results · mean fuel regret by lead time</p>
+<h2 style="position:absolute;left:128px;top:172px;width:1664px;font-family:'Source Serif 4', Georgia, serif;font-size:56px;font-weight:600;line-height:1.1;color:#14213D">AI forecast sources pull ahead only at 5 days out</h2>
+<p style="position:absolute;left:128px;top:268px;width:1000px;font-size:24px;color:#4A5568">kg of extra fuel per crossing, eastbound and westbound pooled</p>
+<svg aria-label="Line chart of mean fuel regret by lead time. At 12, 24 and 48 h all three forecast sources are between 6 and 30 kg. At 72 h: Pangu-Weather 53, GraphCast 66, IFS HRES 71 kg. At 120 h: GraphCast 160, Pangu-Weather 172, IFS HRES 294 kg." width="900" height="500" viewBox="0 0 900 500" style="position:absolute;left:208px;top:330px;width:900px;height:500px">
+<line x1="20" y1="480" x2="880" y2="480" stroke="#8A93A3" stroke-width="2"/>
+<line x1="20" y1="330" x2="880" y2="330" stroke="#DCD8CE" stroke-width="1.5"/>
+<line x1="20" y1="180" x2="880" y2="180" stroke="#DCD8CE" stroke-width="1.5"/>
+<line x1="20" y1="30" x2="880" y2="30" stroke="#DCD8CE" stroke-width="1.5"/>
+<polyline points="60,471 250,463.5 440,435 630,373.5 820,39" fill="none" stroke="#2F6690" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="60,469.5 250,463.5 440,438 630,400.5 820,222" fill="none" stroke="#7A4310" stroke-width="5" stroke-dasharray="14 10" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="60,471 250,463.5 440,441 630,381 820,240" fill="none" stroke="#E08A2E" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="820" cy="39" r="10" fill="#2F6690"/>
+<circle cx="820" cy="222" r="10" fill="#7A4310"/>
+<circle cx="820" cy="240" r="10" fill="#E08A2E"/>
+</svg>
+<p style="position:absolute;left:120px;top:793px;width:72px;font-size:24px;text-align:right;color:#4A5568">0</p>
+<p style="position:absolute;left:120px;top:643px;width:72px;font-size:24px;text-align:right;color:#4A5568">100</p>
+<p style="position:absolute;left:120px;top:493px;width:72px;font-size:24px;text-align:right;color:#4A5568">200</p>
+<p style="position:absolute;left:120px;top:343px;width:72px;font-size:24px;text-align:right;color:#4A5568">300</p>
+<p style="position:absolute;left:208px;top:846px;width:120px;font-size:24px;text-align:center;color:#4A5568">12 h</p>
+<p style="position:absolute;left:398px;top:846px;width:120px;font-size:24px;text-align:center;color:#4A5568">24 h</p>
+<p style="position:absolute;left:588px;top:846px;width:120px;font-size:24px;text-align:center;color:#4A5568">48 h</p>
+<p style="position:absolute;left:778px;top:846px;width:120px;font-size:24px;text-align:center;color:#4A5568">72 h</p>
+<p style="position:absolute;left:968px;top:846px;width:120px;font-size:24px;text-align:center;color:#4A5568">120 h</p>
+<p style="position:absolute;left:1048px;top:352px;width:310px;font-size:26px;font-weight:600;color:#2F6690">IFS HRES 294 kg</p>
+<p style="position:absolute;left:1048px;top:506px;width:310px;font-size:26px;font-weight:600;color:#7A4310">Pangu 172 kg</p>
+<p style="position:absolute;left:1048px;top:566px;width:310px;font-size:26px;font-weight:600;color:#B86A1C">GraphCast 160 kg</p>
+<div style="position:absolute;left:1400px;top:300px;width:392px;display:flex;flex-direction:column;gap:36px">
+<div style="display:flex;flex-direction:column;gap:6px;border-left:4px solid #2F6690;padding:0 0 0 24px">
+<p style="font-family:'Source Serif 4', Georgia, serif;font-size:64px;font-weight:600;line-height:1.1;color:#14213D">Tie</p>
+<p style="font-size:26px;line-height:1.35;color:#4A5568">12–72 h: all three within a few kg.</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:6px;border-left:4px solid #E08A2E;padding:0 0 0 24px">
+<p style="font-family:'Source Serif 4', Georgia, serif;font-size:64px;font-weight:600;line-height:1.1;color:#14213D">−46%</p>
+<p style="font-size:26px;line-height:1.35;color:#4A5568">120 h: GraphCast 160 kg vs IFS HRES 294 kg.</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:6px;border-left:4px solid #8A93A3;padding:0 0 0 24px">
+<p style="font-family:'Source Serif 4', Georgia, serif;font-size:64px;font-weight:600;line-height:1.1;color:#14213D">~100×</p>
+<p style="font-size:26px;line-height:1.35;color:#4A5568">Persistence at 12 h: 526 kg vs 6 kg. Off this scale.</p>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#6A7179">Means over 120 flights, 90% bootstrap CIs. At 120 h: GraphCast 124–202 kg · Pangu-Weather 139–208 kg · IFS HRES 229–367 kg.</p>
+<aside>Up to 72 hours the three forecast sources are statistically tied, with overlapping confidence intervals, and regret is a few tens of kg at most. At 120 hours GraphCast and Pangu-Weather cost about half what IFS HRES costs: roughly 130 kg less fuel, 400 kg less CO2 and about a minute of flight time per crossing. The persistence baseline is far worse at every lead and sits off this chart. Medians are lower than means: a few bad flights pull the means up.</aside>
+</section>
