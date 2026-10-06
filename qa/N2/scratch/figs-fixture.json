@@ -1,0 +1,1102 @@
+{
+  "fig-neuralgcm": {
+    "title": "5-source comparison on 6 flights, 12-hourly planning",
+    "hovermode": "closest",
+    "axes": [
+      {
+        "k": "xaxis",
+        "dom": [
+          0,
+          0.44
+        ],
+        "range": [
+          4.65,
+          127.35
+        ],
+        "type": "linear",
+        "title": "Click to enter X axis title",
+        "anchor": "y"
+      },
+      {
+        "k": "xaxis2",
+        "dom": [
+          0.54,
+          0.98
+        ],
+        "range": [
+          4.65,
+          127.35
+        ],
+        "type": "linear",
+        "title": "Click to enter X axis title",
+        "anchor": "y2"
+      },
+      {
+        "k": "xaxis3",
+        "dom": [
+          0,
+          0.44
+        ],
+        "range": [
+          4.65,
+          127.35
+        ],
+        "type": "linear",
+        "title": "lead time (h)",
+        "anchor": "y3"
+      },
+      {
+        "k": "xaxis4",
+        "dom": [
+          0.54,
+          0.98
+        ],
+        "range": [
+          4.65,
+          127.35
+        ],
+        "type": "linear",
+        "title": "lead time (h)",
+        "anchor": "y4"
+      },
+      {
+        "k": "yaxis",
+        "dom": [
+          0.57,
+          1
+        ],
+        "range": [
+          -44.9,
+          701.34
+        ],
+        "type": "linear",
+        "title": "mean fuel regret (kg)",
+        "anchor": "x"
+      },
+      {
+        "k": "yaxis2",
+        "dom": [
+          0.57,
+          1
+        ],
+        "range": [
+          -44.9,
+          701.34
+        ],
+        "type": "linear",
+        "title": "Click to enter Y axis title",
+        "anchor": "x2"
+      },
+      {
+        "k": "yaxis3",
+        "dom": [
+          0,
+          0.43
+        ],
+        "range": [
+          -473.82,
+          8674.43
+        ],
+        "type": "linear",
+        "title": "mean fuel regret (kg)",
+        "anchor": "x3"
+      },
+      {
+        "k": "yaxis4",
+        "dom": [
+          0,
+          0.43
+        ],
+        "range": [
+          -473.82,
+          8674.43
+        ],
+        "type": "linear",
+        "title": "Click to enter Y axis title",
+        "anchor": "x4"
+      }
+    ],
+    "ann": [
+      {
+        "text": "Eastbound",
+        "xref": "paper",
+        "yref": "paper"
+      },
+      {
+        "text": "Westbound",
+        "xref": "paper",
+        "yref": "paper"
+      },
+      {
+        "text": "Forecast sources",
+        "xref": "paper",
+        "yref": "paper"
+      },
+      {
+        "text": "Persistence baseline",
+        "xref": "paper",
+        "yref": "paper"
+      },
+      {
+        "text": "Shaded bands: 90% CI of the mean",
+        "xref": "paper",
+        "yref": "paper"
+      }
+    ],
+    "traces": [
+      {
+        "name": "IFS HRES 90% CI",
+        "type": "scatter",
+        "mode": "lines",
+        "xaxis": "x",
+        "yaxis": "y",
+        "show": false,
+        "fill": "toself",
+        "hoverinfo": "skip",
+        "n": 10,
+        "x": [
+          12,
+          24,
+          48,
+          72,
+          120,
+          120,
+          72,
+          48,
+          24,
+          12
+        ],
+        "y": [
+          23.65,
+          40.7,
+          69.45,
+          182.41,
+          664.03,
+          173.58,
+          89.31,
+          41.72,
+          13.96,
+          2.98
+        ],
+        "color": "#636efa",
+        "dash": "solid"
+      },
+      {
+        "name": "IFS HRES",
+        "type": "scatter",
+        "mode": "lines+markers",
+        "xaxis": "x",
+        "yaxis": "y",
+        "show": true,
+        "fill": "none",
+        "ht": "IFS HRES<br>lead time %{x} h<br>mean fuel regret %{y:.1f} kg<extra></extra>",
+        "n": 5,
+        "x": [
+          12,
+          24,
+          48,
+          72,
+          120
+        ],
+        "y": [
+          13.32,
+          27.33,
+          55.58,
+          135.86,
+          418.8
+        ],
+        "color": "#1f77b4",
+        "dash": "solid",
+        "sym": "circle"
+      },
+      {
+        "name": "IFS HRES 90% CI",
+        "type": "scatter",
+        "mode": "lines",
+        "xaxis": "x2",
+        "yaxis": "y2",
+        "show": false,
+        "fill": "toself",
+        "hoverinfo": "skip",
+        "n": 10,
+        "x": [
+          12,
+          24,
+          48,
+          72,
+          120,
+          120,
+          72,
+          48,
+          24,
+          12
+        ],
+        "y": [
+          26.58,
+          26.58,
+          47.82,
+          26.43,
+          60.7,
+          21.04,
+          20.89,
+          22.36,
+          21.04,
+          21.04
+        ],
+        "color": "#00cc96",
+        "dash": "solid"
+      },
+      {
+        "name": "IFS HRES",
+        "type": "scatter",
+        "mode": "lines+markers",
+        "xaxis": "x2",
+        "yaxis": "y2",
+        "show": false,
+        "fill": "none",
+        "ht": "IFS HRES<br>lead time %{x} h<br>mean fuel regret %{y:.1f} kg<extra></extra>",
+        "n": 5,
+        "x": [
+          12,
+          24,
+          48,
+          72,
+          120
+        ],
+        "y": [
+          23.81,
+          23.81,
+          35.09,
+          23.66,
+          40.87
+        ],
+        "color": "#1f77b4",
+        "dash": "solid",
+        "sym": "circle"
+      },
+      {
+        "name": "GraphCast 90% CI",
+        "type": "scatter",
+        "mode": "lines",
+        "xaxis": "x",
+        "yaxis": "y",
+        "show": false,
+        "fill": "toself",
+        "hoverinfo": "skip",
+        "n": 10,
+        "x": [
+          12,
+          24,
+          48,
+          72,
+          120,
+          120,
+          72,
+          48,
+          24,
+          12
+        ],
+        "y": [
+          21.51,
+          18.12,
+          39.07,
+          57.56,
+          141.57,
+          43.02,
+          34.5,
+          24.47,
+          8.81,
+          5.92
+        ],
+        "color": "#FFA15A",
+        "dash": "solid"
+      },
+      {
+        "name": "GraphCast",
+        "type": "scatter",
+        "mode": "lines+markers",
+        "xaxis": "x",
+        "yaxis": "y",
+        "show": true,
+        "fill": "none",
+        "ht": "GraphCast<br>lead time %{x} h<br>mean fuel regret %{y:.1f} kg<extra></extra>",
+        "n": 5,
+        "x": [
+          12,
+          24,
+          48,
+          72,
+          120
+        ],
+        "y": [
+          13.71,
+          13.47,
+          31.77,
+          46.03,
+          92.3
+        ],
+        "color": "#2ca02c",
+        "dash": "solid",
+        "sym": "diamond"
+      },
+      {
+        "name": "GraphCast 90% CI",
+        "type": "scatter",
+        "mode": "lines",
+        "xaxis": "x2",
+        "yaxis": "y2",
+        "show": false,
+        "fill": "toself",
+        "hoverinfo": "skip",
+        "n": 10,
+        "x": [
+          12,
+          24,
+          48,
+          72,
+          120,
+          120,
+          72,
+          48,
+          24,
+          12
+        ],
+        "y": [
+          38.25,
+          53.65,
+          55.81,
+          47.82,
+          104.17,
+          34.15,
+          22.36,
+          17.3,
+          28.2,
+          21.04
+        ],
+        "color": "#FF6692",
+        "dash": "solid"
+      },
+      {
+        "name": "GraphCast",
+        "type": "scatter",
+        "mode": "lines+markers",
+        "xaxis": "x2",
+        "yaxis": "y2",
+        "show": false,
+        "fill": "none",
+        "ht": "GraphCast<br>lead time %{x} h<br>mean fuel regret %{y:.1f} kg<extra></extra>",
+        "n": 5,
+        "x": [
+          12,
+          24,
+          48,
+          72,
+          120
+        ],
+        "y": [
+          29.65,
+          40.93,
+          36.55,
+          35.09,
+          69.16
+        ],
+        "color": "#2ca02c",
+        "dash": "solid",
+        "sym": "diamond"
+      },
+      {
+        "name": "Pangu-Weather 90% CI",
+        "type": "scatter",
+        "mode": "lines",
+        "xaxis": "x",
+        "yaxis": "y",
+        "show": false,
+        "fill": "toself",
+        "hoverinfo": "skip",
+        "n": 10,
+        "x": [
+          12,
+          24,
+          48,
+          72,
+          120,
+          120,
+          72,
+          48,
+          24,
+          12
+        ],
+        "y": [
+          19.8,
+          24,
+          32.69,
+          33.29,
+          207.69,
+          81.38,
+          10.72,
+          14.38,
+          2.98,
+          2.98
+        ],
+        "color": "#FF97FF",
+        "dash": "solid"
+      },
+      {
+        "name": "Pangu-Weather",
+        "type": "scatter",
+        "mode": "lines+markers",
+        "xaxis": "x",
+        "yaxis": "y",
+        "show": true,
+        "fill": "none",
+        "ht": "Pangu-Weather<br>lead time %{x} h<br>mean fuel regret %{y:.1f} kg<extra></extra>",
+        "n": 5,
+        "x": [
+          12,
+          24,
+          48,
+          72,
+          120
+        ],
+        "y": [
+          11.39,
+          13.49,
+          23.54,
+          22.01,
+          144.54
+        ],
+        "color": "#9467bd",
+        "dash": "solid",
+        "sym": "square"
+      },
+      {
+        "name": "Pangu-Weather 90% CI",
+        "type": "scatter",
+        "mode": "lines",
+        "xaxis": "x2",
+        "yaxis": "y2",
+        "show": false,
+        "fill": "toself",
+        "hoverinfo": "skip",
+        "n": 10,
+        "x": [
+          12,
+          24,
+          48,
+          72,
+          120,
+          120,
+          72,
+          48,
+          24,
+          12
+        ],
+        "y": [
+          26.58,
+          26.58,
+          58.09,
+          38.25,
+          153.12,
+          30.36,
+          21.04,
+          46.29,
+          21.04,
+          20.63
+        ],
+        "color": "#636efa",
+        "dash": "solid"
+      },
+      {
+        "name": "Pangu-Weather",
+        "type": "scatter",
+        "mode": "lines+markers",
+        "xaxis": "x2",
+        "yaxis": "y2",
+        "show": false,
+        "fill": "none",
+        "ht": "Pangu-Weather<br>lead time %{x} h<br>mean fuel regret %{y:.1f} kg<extra></extra>",
+        "n": 5,
+        "x": [
+          12,
+          24,
+          48,
+          72,
+          120
+        ],
+        "y": [
+          23.6,
+          23.81,
+          52.19,
+          29.65,
+          91.74
+        ],
+        "color": "#9467bd",
+        "dash": "solid",
+        "sym": "square"
+      },
+      {
+        "name": "Persistence baseline 90% CI",
+        "type": "scatter",
+        "mode": "lines",
+        "xaxis": "x3",
+        "yaxis": "y3",
+        "show": false,
+        "fill": "toself",
+        "hoverinfo": "skip",
+        "n": 10,
+        "x": [
+          12,
+          24,
+          48,
+          72,
+          120,
+          120,
+          72,
+          48,
+          24,
+          12
+        ],
+        "y": [
+          1036.57,
+          1613.29,
+          1581.13,
+          1052.66,
+          2724.06,
+          1227.59,
+          422.85,
+          1398.56,
+          908.43,
+          370.6
+        ],
+        "color": "#00cc96",
+        "dash": "solid"
+      },
+      {
+        "name": "Persistence baseline",
+        "type": "scatter",
+        "mode": "lines+markers",
+        "xaxis": "x3",
+        "yaxis": "y3",
+        "show": true,
+        "fill": "none",
+        "ht": "Persistence baseline<br>lead time %{x} h<br>mean fuel regret %{y:.1f} kg<extra></extra>",
+        "n": 5,
+        "x": [
+          12,
+          24,
+          48,
+          72,
+          120
+        ],
+        "y": [
+          703.58,
+          1260.86,
+          1489.84,
+          737.75,
+          1975.82
+        ],
+        "color": "#7f7f7f",
+        "dash": "solid",
+        "sym": "x"
+      },
+      {
+        "name": "Persistence baseline 90% CI",
+        "type": "scatter",
+        "mode": "lines",
+        "xaxis": "x4",
+        "yaxis": "y4",
+        "show": false,
+        "fill": "toself",
+        "hoverinfo": "skip",
+        "n": 10,
+        "x": [
+          12,
+          24,
+          48,
+          72,
+          120,
+          120,
+          72,
+          48,
+          24,
+          12
+        ],
+        "y": [
+          320.51,
+          995.72,
+          3930.25,
+          3436.49,
+          8217.02,
+          3111.08,
+          1601,
+          901.54,
+          350.67,
+          112.05
+        ],
+        "color": "#FFA15A",
+        "dash": "solid"
+      },
+      {
+        "name": "Persistence baseline",
+        "type": "scatter",
+        "mode": "lines+markers",
+        "xaxis": "x4",
+        "yaxis": "y4",
+        "show": false,
+        "fill": "none",
+        "ht": "Persistence baseline<br>lead time %{x} h<br>mean fuel regret %{y:.1f} kg<extra></extra>",
+        "n": 5,
+        "x": [
+          12,
+          24,
+          48,
+          72,
+          120
+        ],
+        "y": [
+          216.28,
+          673.2,
+          2415.89,
+          2518.75,
+          5664.05
+        ],
+        "color": "#7f7f7f",
+        "dash": "solid",
+        "sym": "x"
+      },
+      {
+        "name": "NeuralGCM 90% CI",
+        "type": "scatter",
+        "mode": "lines",
+        "xaxis": "x",
+        "yaxis": "y",
+        "show": false,
+        "fill": "toself",
+        "hoverinfo": "skip",
+        "n": 10,
+        "x": [
+          12,
+          24,
+          48,
+          72,
+          120,
+          120,
+          72,
+          48,
+          24,
+          12
+        ],
+        "y": [
+          35.11,
+          23.68,
+          19.12,
+          43.65,
+          275.15,
+          94.02,
+          28.26,
+          15.87,
+          6.48,
+          8.83
+        ],
+        "color": "#FF6692",
+        "dash": "solid"
+      },
+      {
+        "name": "NeuralGCM",
+        "type": "scatter",
+        "mode": "lines+markers",
+        "xaxis": "x",
+        "yaxis": "y",
+        "show": true,
+        "fill": "none",
+        "ht": "NeuralGCM<br>lead time %{x} h<br>mean fuel regret %{y:.1f} kg<extra></extra>",
+        "n": 5,
+        "x": [
+          12,
+          24,
+          48,
+          72,
+          120
+        ],
+        "y": [
+          21.97,
+          15.08,
+          17.49,
+          35.96,
+          184.59
+        ],
+        "color": "#17becf",
+        "dash": "solid",
+        "sym": "triangle-up"
+      },
+      {
+        "name": "NeuralGCM 90% CI",
+        "type": "scatter",
+        "mode": "lines",
+        "xaxis": "x2",
+        "yaxis": "y2",
+        "show": false,
+        "fill": "toself",
+        "hoverinfo": "skip",
+        "n": 10,
+        "x": [
+          12,
+          24,
+          48,
+          72,
+          120,
+          120,
+          72,
+          48,
+          24,
+          12
+        ],
+        "y": [
+          26.58,
+          26.58,
+          38.29,
+          58.62,
+          102.17,
+          46.71,
+          27.56,
+          9.3,
+          21.04,
+          21.04
+        ],
+        "color": "#FF97FF",
+        "dash": "solid"
+      },
+      {
+        "name": "NeuralGCM",
+        "type": "scatter",
+        "mode": "lines+markers",
+        "xaxis": "x2",
+        "yaxis": "y2",
+        "show": false,
+        "fill": "none",
+        "ht": "NeuralGCM<br>lead time %{x} h<br>mean fuel regret %{y:.1f} kg<extra></extra>",
+        "n": 5,
+        "x": [
+          12,
+          24,
+          48,
+          72,
+          120
+        ],
+        "y": [
+          23.81,
+          23.81,
+          23.8,
+          43.09,
+          74.44
+        ],
+        "color": "#17becf",
+        "dash": "solid",
+        "sym": "triangle-up"
+      }
+    ]
+  },
+  "fig-ensemble": {
+    "title": "Ensemble robust plans (M = 25 members), 6 flights, 12-hourly planning",
+    "hovermode": "closest",
+    "axes": [
+      {
+        "k": "xaxis",
+        "dom": [
+          0,
+          1
+        ],
+        "range": [
+          5.33,
+          126.67
+        ],
+        "type": "linear",
+        "title": "lead time (h)",
+        "anchor": "y"
+      },
+      {
+        "k": "yaxis",
+        "dom": [
+          0,
+          1
+        ],
+        "range": [
+          0,
+          213.35
+        ],
+        "type": "linear",
+        "title": "mean fuel regret (kg)",
+        "anchor": "x"
+      }
+    ],
+    "ann": [
+      {
+        "text": "Shaded bands: 90% CI of the mean. Regret is floored at 0 against the NeuralGCM add-on hindsight plan.",
+        "xref": "paper",
+        "yref": "paper"
+      }
+    ],
+    "traces": [
+      {
+        "name": "Mean-robust plan 90% CI",
+        "type": "scatter",
+        "mode": "lines",
+        "xaxis": "x",
+        "yaxis": "y",
+        "show": false,
+        "fill": "toself",
+        "hoverinfo": "skip",
+        "n": 10,
+        "x": [
+          12,
+          24,
+          48,
+          72,
+          120,
+          120,
+          72,
+          48,
+          24,
+          12
+        ],
+        "y": [
+          28.88,
+          31.4,
+          36.78,
+          36.64,
+          85.71,
+          39.59,
+          22.48,
+          22.57,
+          14.07,
+          12.81
+        ],
+        "color": "#636efa",
+        "dash": "solid"
+      },
+      {
+        "name": "Mean-robust plan",
+        "type": "scatter",
+        "mode": "lines+markers",
+        "xaxis": "x",
+        "yaxis": "y",
+        "show": true,
+        "fill": "none",
+        "ht": "Mean-robust plan<br>lead time %{x} h<br>mean fuel regret %{y:.1f} kg<extra></extra>",
+        "n": 5,
+        "x": [
+          12,
+          24,
+          48,
+          72,
+          120
+        ],
+        "y": [
+          21.32,
+          22.88,
+          29.23,
+          29.12,
+          60.64
+        ],
+        "color": "#d62728",
+        "dash": "solid",
+        "sym": "star"
+      },
+      {
+        "name": "p90-robust plan 90% CI",
+        "type": "scatter",
+        "mode": "lines",
+        "xaxis": "x",
+        "yaxis": "y",
+        "show": false,
+        "fill": "toself",
+        "hoverinfo": "skip",
+        "n": 10,
+        "x": [
+          12,
+          24,
+          48,
+          72,
+          120,
+          120,
+          72,
+          48,
+          24,
+          12
+        ],
+        "y": [
+          30.45,
+          34.22,
+          38.15,
+          43.83,
+          138.37,
+          45.07,
+          25.18,
+          25.7,
+          14.07,
+          13.11
+        ],
+        "color": "#00cc96",
+        "dash": "solid"
+      },
+      {
+        "name": "p90-robust plan",
+        "type": "scatter",
+        "mode": "lines+markers",
+        "xaxis": "x",
+        "yaxis": "y",
+        "show": true,
+        "fill": "none",
+        "ht": "p90-robust plan<br>lead time %{x} h<br>mean fuel regret %{y:.1f} kg<extra></extra>",
+        "n": 5,
+        "x": [
+          12,
+          24,
+          48,
+          72,
+          120
+        ],
+        "y": [
+          22.09,
+          23.94,
+          31.63,
+          34.32,
+          90.14
+        ],
+        "color": "#ff7f0e",
+        "dash": "solid",
+        "sym": "pentagon"
+      },
+      {
+        "name": "NeuralGCM 90% CI",
+        "type": "scatter",
+        "mode": "lines",
+        "xaxis": "x",
+        "yaxis": "y",
+        "show": false,
+        "fill": "toself",
+        "hoverinfo": "skip",
+        "n": 10,
+        "x": [
+          12,
+          24,
+          48,
+          72,
+          120,
+          120,
+          72,
+          48,
+          24,
+          12
+        ],
+        "y": [
+          30.85,
+          25.72,
+          29.85,
+          50.88,
+          202.69,
+          64.17,
+          27.96,
+          12.2,
+          12.59,
+          14.63
+        ],
+        "color": "#FFA15A",
+        "dash": "solid"
+      },
+      {
+        "name": "NeuralGCM",
+        "type": "scatter",
+        "mode": "lines+markers",
+        "xaxis": "x",
+        "yaxis": "y",
+        "show": true,
+        "fill": "none",
+        "ht": "NeuralGCM<br>lead time %{x} h<br>mean fuel regret %{y:.1f} kg<extra></extra>",
+        "n": 5,
+        "x": [
+          12,
+          24,
+          48,
+          72,
+          120
+        ],
+        "y": [
+          22.89,
+          19.44,
+          20.65,
+          39.52,
+          129.51
+        ],
+        "color": "#17becf",
+        "dash": "dash",
+        "sym": "triangle-up"
+      },
+      {
+        "name": "GraphCast 90% CI",
+        "type": "scatter",
+        "mode": "lines",
+        "xaxis": "x",
+        "yaxis": "y",
+        "show": false,
+        "fill": "toself",
+        "hoverinfo": "skip",
+        "n": 10,
+        "x": [
+          12,
+          24,
+          48,
+          72,
+          120,
+          120,
+          72,
+          48,
+          24,
+          12
+        ],
+        "y": [
+          30.18,
+          40.31,
+          46.61,
+          52.69,
+          120.31,
+          43.02,
+          29.8,
+          21.26,
+          14.75,
+          12.78
+        ],
+        "color": "#FF6692",
+        "dash": "solid"
+      },
+      {
+        "name": "GraphCast",
+        "type": "scatter",
+        "mode": "lines+markers",
+        "xaxis": "x",
+        "yaxis": "y",
+        "show": true,
+        "fill": "none",
+        "ht": "GraphCast<br>lead time %{x} h<br>mean fuel regret %{y:.1f} kg<extra></extra>",
+        "n": 5,
+        "x": [
+          12,
+          24,
+          48,
+          72,
+          120
+        ],
+        "y": [
+          21.68,
+          27.2,
+          34.16,
+          40.56,
+          80.73
+        ],
+        "color": "#2ca02c",
+        "dash": "dash",
+        "sym": "diamond"
+      }
+    ]
+  }
+}

@@ -1,0 +1,4 @@
+127.0.0.1 - - [01/Oct/2026 14:04:49] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [01/Oct/2026 14:04:52] "GET /qa/T19/scratch/fig.html HTTP/1.1" 200 -
+127.0.0.1 - - [01/Oct/2026 14:04:52] code 404, message File not found
+127.0.0.1 - - [01/Oct/2026 14:04:52] "GET /favicon.ico HTTP/1.1" 404 -

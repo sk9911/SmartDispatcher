@@ -1,0 +1,21 @@
+........................................................................ [ 24%]
+........................................................................ [ 49%]
+........................................................................ [ 74%]
+........................................................................ [ 98%]
+...                                                                      [100%]
+=============================== warnings summary ===============================
+src/regret/fetch.py:25
+  /private/var/folders/y7/9h6hg8gd22gdfnv3l3_dfdrw0000gn/T/tmp.nH5olDMmot/regret/src/regret/fetch.py:25: DeprecationWarning: BloscShuffle.shuffle is deprecated; pass the string 'shuffle' instead.
+    SHUFFLE = BloscShuffle.shuffle  # byte shuffle
+
+tests/test_fetch.py: 210 warnings
+tests/test_sources.py: 105 warnings
+  /private/var/folders/y7/9h6hg8gd22gdfnv3l3_dfdrw0000gn/T/tmp.nH5olDMmot/regret/.venv/lib/python3.12/site-packages/zarr/api/asynchronous.py:246: ZarrUserWarning: Consolidated metadata is currently not part in the Zarr format 3 specification. It may not be supported by other zarr implementations and may change in the future.
+    warnings.warn(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+
+Learn more about nbmake at https://github.com/treebeardtech/nbmake
+
+291 passed, 316 warnings in 65.93s (0:01:05)
+REGRET_BLOCK_NETWORK=1 uv run pytest -rs -q  66.07s user 19.83s system 126% cpu 1:08.12 total

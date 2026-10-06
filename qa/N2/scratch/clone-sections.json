@@ -1,0 +1,109 @@
+{
+  "core": {
+    "fig-headline": 3,
+    "fig-showcase-map": 3,
+    "fig-lead-regret": 3,
+    "fig-wind-error": 3,
+    "fig-sanity": 3
+  },
+  "plots": [
+    "fig-headline",
+    "fig-showcase-map",
+    "fig-lead-regret",
+    "fig-wind-error",
+    "fig-sanity"
+  ],
+  "addonIdsInHtml": [
+    0,
+    0,
+    0
+  ],
+  "stderr": 0,
+  "errors": 0,
+  "heads": [
+    "1. Headline: what forecast error costs¶",
+    "2. Showcase flight: JFK→LHR, 2020-02-09¶",
+    "3. Regret vs lead time¶",
+    "4. Wind error vs fuel regret¶",
+    "5. Sanity panel¶",
+    "6. Stretch: geostrophic balance at 250 hPa¶",
+    "7. NeuralGCM add-on: 5-source comparison¶",
+    "8. Ensemble robust plan (NeuralGCM ensemble)¶",
+    "9. Method, assumptions and limitations¶"
+  ],
+  "sec": {
+    "6": {
+      "text": "6. Stretch: geostrophic balance at 250 hPa¶Is a forecast's wind near jet level balanced the way the real atmosphere is? The ageostrophic fraction is |V − V_g| / |V|, the share of the wind that the geostrophic wind V_g (from the geopotential gradient) does not explain, taken over 30–70°N and averaged over the experiment's flights. Done as an opt-in add-on with a reduced method (sections 7 and 8): NeuralGCM and its ensemble. The WeatherBench 2 NeuralGCM stores start on 2020-01-01 and have 12-hourly steps, so the add-on keeps only the flights with a NeuralGCM initialisation at every lead and plans every source from steps 12 h apart. The geostrophic balance figure is an optional stretch and its result is not present. To produce it, run uv run regret fetch --with geopotential and then uv run regret geostrophic, then run the report again.",
+      "kg": null,
+      "dec": null,
+      "digits": [
+        "6.",
+        "250",
+        "30–70",
+        "7",
+        "8",
+        "2",
+        "2020-01-01",
+        "12-",
+        "12"
+      ],
+      "code": [
+        "uv run regret fetch --with geopotential",
+        "uv run regret geostrophic"
+      ],
+      "plots": 0,
+      "mdOut": [
+        "1154x52"
+      ]
+    },
+    "7": {
+      "text": "7. NeuralGCM add-on: 5-source comparison¶Reduced method: only the flights with a NeuralGCM initialisation at every lead (departures from 2020-01-06), and every source, not only NeuralGCM, planned from the steps at the lead and 12 h later (12-hourly planning), so differences between sources are not time-resolution differences. The add-on has its own candidate set (the truth-optimised plan and all five forecast sources) and its own results, separate from sections 1 to 5; the core experiment is unchanged. Lines are means and shaded bands are 90% CIs. The NeuralGCM add-on is optional and its result is not present. To produce it, run uv run regret fetch --with neuralgcm,neuralgcm_ens and then uv run regret neuralgcm, then run the report again.",
+      "kg": null,
+      "dec": null,
+      "digits": [
+        "7.",
+        "5-",
+        "2020-01-06",
+        "12",
+        "12-",
+        "1",
+        "5",
+        "90"
+      ],
+      "code": [
+        "uv run regret fetch --with neuralgcm,neuralgcm_ens",
+        "uv run regret neuralgcm"
+      ],
+      "plots": 0,
+      "mdOut": [
+        "1154x52"
+      ]
+    },
+    "8": {
+      "text": "8. Ensemble robust plan (NeuralGCM ensemble)¶On the add-on's flights and 12-hourly planning, a plan is made on each of M members of the NeuralGCM ensemble, and each plan is replayed through every member. The mean-robust plan has the lowest mean cost across members and the p90-robust plan the lowest 90th-percentile cost; each chosen plan is then replayed through the truth. Regret is floored at 0 against the add-on's hindsight plan, and the share of flights where a chosen plan beats it is reported. M is a subset of the 50 members, chosen from measured run time (cost grows with the square of M). The IFS ensemble and GenCast are not used: WeatherBench 2 stores them only at 500/700/850 hPa. The ensemble robust plan is optional and its result is not present. To produce it, run uv run regret ensemble (after uv run regret neuralgcm), then run the report again.",
+      "kg": null,
+      "dec": null,
+      "digits": [
+        "8.",
+        "12-",
+        "90-",
+        "90",
+        "0",
+        "50",
+        "2",
+        "500",
+        "700",
+        "850"
+      ],
+      "code": [
+        "uv run regret ensemble",
+        "uv run regret neuralgcm"
+      ],
+      "plots": 0,
+      "mdOut": [
+        "1154x52"
+      ]
+    }
+  },
+  "scrollW": 1200
+}

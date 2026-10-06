@@ -1,0 +1,44 @@
+{
+  "s7": [
+    {
+      "cls": "jp-MarkdownCell",
+      "md": "7. NeuralGCM add-on: 5-source comparison\n\nReduced method: only the flights with a NeuralGCM initialisation at every lead (departures from 2020-01-06), and every source, not only NeuralGCM, planned from the steps at the lead and 12 h later (12-hourly planning), so differences between sources are not time-resolution differences. The add-on has its own candidate set (the truth-optimised plan and all five forecast sources) and its own results, separate from sections 1 to 5; the core experiment is unchanged. Lines are means and shaded bands are 90% CIs.",
+      "outs": []
+    },
+    {
+      "cls": "jp-CodeCell",
+      "md": null,
+      "outs": [
+        {
+          "mime": "text/html",
+          "text": "[PLOT #fig-neuralgcm]"
+        },
+        {
+          "mime": "text/markdown",
+          "text": "On 6 flights, NeuralGCM's mean fuel regret at the shortest leads (12-24 h) is 21 kg, rank 2 of 4 forecast sources, 3 kg above Pangu-Weather (18 kg); at the longest lead (120 h) is 130 kg, rank 3 of 4 forecast sources, 49 kg above GraphCast (81 kg). Planning 12-hourly instead of 6-hourly adds roughly 15 kg of mean regret at 12-24 h for the core forecast sources on the same flights, so short-lead numbers here mostly reflect time resolution, not forecast quality."
+        }
+      ]
+    }
+  ],
+  "s8": [
+    {
+      "cls": "jp-MarkdownCell",
+      "md": "8. Ensemble robust plan (NeuralGCM ensemble)\n\nOn the add-on's flights and 12-hourly planning, a plan is made on each of M members of the NeuralGCM ensemble, and each plan is replayed through every member. The mean-robust plan has the lowest mean cost across members and the p90-robust plan the lowest 90th-percentile cost; each chosen plan is then replayed through the truth. Regret is floored at 0 against the add-on's hindsight plan, and the share of flights where a chosen plan beats it is reported. M is a subset of the 50 members, chosen from measured run time (cost grows with the square of M). The IFS ensemble and GenCast are not used: WeatherBench 2 stores them only at 500/700/850 hPa.",
+      "outs": []
+    },
+    {
+      "cls": "jp-CodeCell",
+      "md": null,
+      "outs": [
+        {
+          "mime": "text/html",
+          "text": "[PLOT #fig-ensemble]"
+        },
+        {
+          "mime": "text/markdown",
+          "text": "The robust plans use M = 25 of the 50 members. At 120 h the mean-robust plan's mean fuel regret is 61 kg against 81 kg for the best deterministic source (GraphCast). Neither choice ever beats the add-on hindsight plan (0 of 60 plans). With M = 25 the 90th percentile is close to the maximum over members, so the p90-robust plan over-penalises (mean regret 90 kg at 120 h)."
+        }
+      ]
+    }
+  ]
+}

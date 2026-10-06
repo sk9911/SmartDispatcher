@@ -1,0 +1,34 @@
+[I 2026-10-01 13:54:12.458 ServerApp] jupyter_lsp | extension was successfully linked.
+[I 2026-10-01 13:54:12.460 ServerApp] jupyter_server_terminals | extension was successfully linked.
+[I 2026-10-01 13:54:12.461 ServerApp] jupyterlab | extension was successfully linked.
+[I 2026-10-01 13:54:12.477 ServerApp] notebook_shim | extension was successfully linked.
+[I 2026-10-01 13:54:12.499 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2026-10-01 13:54:12.500 ServerApp] jupyter_lsp | extension was successfully loaded.
+[I 2026-10-01 13:54:12.501 ServerApp] jupyter_server_terminals | extension was successfully loaded.
+[I 2026-10-01 13:54:12.502 LabApp] JupyterLab extension loaded from /Users/shreyas-atomionics/Documents/GitHub/DynamicDispatcher/.venv/lib/python3.12/site-packages/jupyterlab
+[I 2026-10-01 13:54:12.502 LabApp] JupyterLab application directory is /Users/shreyas-atomionics/Documents/GitHub/DynamicDispatcher/.venv/share/jupyter/lab
+[I 2026-10-01 13:54:12.502 LabApp] Extension Manager is 'pypi'.
+[I 2026-10-01 13:54:12.523 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2026-10-01 13:54:12.524 ServerApp] Serving notebooks from local directory: /Users/shreyas-atomionics/Documents/GitHub/DynamicDispatcher
+[I 2026-10-01 13:54:12.524 ServerApp] Jupyter Server 2.21.1 is running at:
+[I 2026-10-01 13:54:12.524 ServerApp] http://127.0.0.1:8888/lab?token=...
+[I 2026-10-01 13:54:12.524 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 2026-10-01 13:54:12.641 ServerApp] Skipped non-installed server(s): basedpyright, bash-language-server, dockerfile-language-server-nodejs, javascript-typescript-langserver, jedi-language-server, julia-language-server, pyrefly, pyright, python-language-server, python-lsp-server, r-languageserver, sql-language-server, texlab, typescript-language-server, unified-language-server, vscode-css-languageserver-bin, vscode-html-languageserver-bin, vscode-json-languageserver-bin, yaml-language-server
+[I 2026-10-01 13:54:24.726 LabApp] Build is up to date
+[I 2026-10-01 13:54:25.642 ServerApp] Writing notebook-signing key to /Users/shreyas-atomionics/Library/Jupyter/notebook_secret
+[W 2026-10-01 13:54:25.642 ServerApp] Notebook qa/T19/scratch/check.ipynb is not trusted
+[I 2026-10-01 13:54:25.757 ServerApp] Kernel started: bf293ee0-57cd-4e04-94b4-7fc9e135ce41
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+[I 2026-10-01 13:54:25.917 ServerApp] Adapting from protocol version 5.3 (kernel bf293ee0-57cd-4e04-94b4-7fc9e135ce41) to 5.4 (client).
+[I 2026-10-01 13:54:25.917 ServerApp] Connecting to kernel bf293ee0-57cd-4e04-94b4-7fc9e135ce41.
+[W 2026-10-01 13:54:25.918 ServerApp] The websocket_ping_timeout (90000) cannot be longer than the websocket_ping_interval (30000).
+    Setting websocket_ping_timeout=30000
+[I 2026-10-01 13:54:25.928 ServerApp] Adapting from protocol version 5.3 (kernel bf293ee0-57cd-4e04-94b4-7fc9e135ce41) to 5.4 (client).
+[I 2026-10-01 13:54:25.929 ServerApp] Connecting to kernel bf293ee0-57cd-4e04-94b4-7fc9e135ce41.
+[I 2026-10-01 13:54:25.942 ServerApp] Adapting from protocol version 5.3 (kernel bf293ee0-57cd-4e04-94b4-7fc9e135ce41) to 5.4 (client).
+[I 2026-10-01 13:54:25.942 ServerApp] Connecting to kernel bf293ee0-57cd-4e04-94b4-7fc9e135ce41.
+[I 2026-10-01 13:54:55.367 ServerApp] Starting buffering for bf293ee0-57cd-4e04-94b4-7fc9e135ce41:af5837d5-fe9a-4bed-8bfa-f86d3260080b
+[C 2026-10-01 13:55:53.503 ServerApp] received signal 15, stopping
+[I 2026-10-01 13:55:53.504 ServerApp] Shutting down 4 extensions
+[I 2026-10-01 13:55:53.504 ServerApp] Shutting down 1 kernel
+[I 2026-10-01 13:55:53.505 ServerApp] Kernel shutdown: bf293ee0-57cd-4e04-94b4-7fc9e135ce41

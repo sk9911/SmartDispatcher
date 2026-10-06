@@ -1,0 +1,15 @@
+async (page) => {
+  const src = "(gd) => {\n  const R = e => { const r = e.getBoundingClientRect(); return [r.left, r.top, r.right, r.bottom].map(v => Math.round(v*10)/10); };\n  const els = {};\n  const add = (k, list) => { list.forEach((e, i) => { const r = R(e); if (r[2]-r[0] > 0 && r[3]-r[1] > 0) els[k + (list.length > 1 ? '#' + i : '')] = r; }); };\n  add('title', [...gd.querySelectorAll('text.gtitle')]);\n  add('dropdown', [...gd.querySelectorAll('.updatemenu-header-group')]);\n  add('leadAnnot', [...gd.querySelectorAll('.annotation text')]);\n  add('legend', [...gd.querySelectorAll('.legend > rect.bg')]);\n  add('legendItem', [...gd.querySelectorAll('.legend .traces')]);\n  add('sliderCurrent', [...gd.querySelectorAll('.slider-group > text.slider-label')]);\n  add('sliderStep', [...gd.querySelectorAll('.slider-label-group text')]);\n  add('colorbar', [...gd.querySelectorAll('g.colorbar')]);\n  add('cbtitle', [...gd.querySelectorAll('.cbtitle')]);\n  add('sliderRail', [...gd.querySelectorAll('.slider-rail-rect')]);\n  add('geo', [...gd.querySelectorAll('.geo .bglayer rect, .geolayer .bg rect')]);\n  const ks = Object.keys(els), hits = [];\n  const fam = k => k.split('#')[0];\n  for (let i = 0; i < ks.length; i++) for (let j = i+1; j < ks.length; j++) {\n    const a = els[ks[i]], b = els[ks[j]];\n    if (fam(ks[i]) === fam(ks[j]) && !['sliderStep','legendItem'].includes(fam(ks[i]))) continue;\n    if ([fam(ks[i]),fam(ks[j])].includes('legend') && [fam(ks[i]),fam(ks[j])].includes('legendItem')) continue;\n    if ([fam(ks[i]),fam(ks[j])].includes('geo')) continue;\n    if (['colorbar','cbtitle'].includes(fam(ks[i])) && ['colorbar','cbtitle'].includes(fam(ks[j]))) continue;\n    const ox = Math.min(a[2], b[2]) - Math.max(a[0], b[0]), oy = Math.min(a[3], b[3]) - Math.max(a[1], b[1]);\n    if (ox > 0.5 && oy > 0.5) hits.push(`${ks[i]} x ${ks[j]} (${ox.toFixed(1)}x${oy.toFixed(1)})`);\n  }\n  return {gd: R(gd), els, hits};\n}\n";
+  const gdSel = '.jp-NotebookPanel:not(.lm-mod-hidden) .jp-OutputArea .js-plotly-plot';
+  const gd = page.locator(gdSel).first();
+  await gd.scrollIntoViewIfNeeded();
+  const out = {};
+  for (const lead of [12, 24, 48, 72, 120]) {
+    await gd.locator('.updatemenu-header').click(); await page.waitForTimeout(300);
+    await gd.locator('.updatemenu-item-text', {hasText: new RegExp('^' + lead + ' h$')}).last().click(); await page.waitForTimeout(700);
+    const r = await gd.evaluate((el, s) => (eval(s))(el), src);
+    out[lead] = {hits: r.hits, legendN: Object.keys(r.els).filter(k => k.startsWith('legendItem')).length, header: await gd.locator('.updatemenu-header text.updatemenu-item-text').textContent()};
+    if (lead === 24) out.els24 = r.els;
+  }
+  return out;
+}

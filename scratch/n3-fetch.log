@@ -1,0 +1,5 @@
+/Users/shreyas-atomionics/Documents/GitHub/DynamicDispatcher/.venv/lib/python3.12/site-packages/zarr/api/asynchronous.py:246: ZarrUserWarning: Consolidated metadata is currently not part in the Zarr format 3 specification. It may not be supported by other zarr implementations and may change in the future.
+  warnings.warn(
+/Users/shreyas-atomionics/Documents/GitHub/DynamicDispatcher/.venv/lib/python3.12/site-packages/zarr/api/asynchronous.py:246: ZarrUserWarning: Consolidated metadata is currently not part in the Zarr format 3 specification. It may not be supported by other zarr implementations and may change in the future.
+  warnings.warn(
+DONE

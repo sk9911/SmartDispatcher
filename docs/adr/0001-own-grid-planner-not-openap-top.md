@@ -1,0 +1,3 @@
+# Own grid planner instead of OpenAP-TOP
+
+Plans are made with our own dynamic-programming search over a lateral grid aligned with the great circle, at a fixed flight level and Mach, minimising flight time through winds that change over time; OpenAP is used only for fuel flow during replay. We rejected OpenAP-TOP because it fits the whole wind field with a second-order polynomial (`PolyWind`), which smooths away the jet-stream detail that separates one forecast source from another, and because its IPOPT solver is a local optimiser, which would make regret partly measure optimiser noise rather than forecast quality.

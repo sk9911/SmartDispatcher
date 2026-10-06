@@ -1,0 +1,64 @@
+{
+  "fig-headline": {
+    "size": "1067x2170",
+    "counts": {
+      "annotation": 2
+    },
+    "dropped": 0,
+    "droppedKinds": [],
+    "hits": []
+  },
+  "fig-showcase-map": {
+    "size": "748x760",
+    "counts": {
+      "title": 2,
+      "annotation": 1,
+      "legend": 1,
+      "legenditem": 5,
+      "updatemenu": 1,
+      "slider": 1,
+      "colorbar": 1,
+      "cbtick": 6
+    },
+    "dropped": 0,
+    "droppedKinds": [],
+    "hits": []
+  },
+  "fig-lead-regret": {
+    "size": "748x700",
+    "counts": {
+      "title": 4,
+      "annotation": 5,
+      "legend": 1,
+      "legenditem": 4,
+      "tick": 20
+    },
+    "dropped": 0,
+    "droppedKinds": [],
+    "hits": []
+  },
+  "fig-wind-error": {
+    "size": "748x635",
+    "counts": {
+      "title": 5,
+      "annotation": 4,
+      "legend": 1,
+      "legenditem": 4,
+      "tick": 23
+    },
+    "dropped": 0,
+    "droppedKinds": [],
+    "hits": []
+  },
+  "fig-sanity": {
+    "size": "748x780",
+    "counts": {
+      "title": 6,
+      "annotation": 7,
+      "tick": 30
+    },
+    "dropped": 0,
+    "droppedKinds": [],
+    "hits": []
+  }
+}

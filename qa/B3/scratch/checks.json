@@ -1,0 +1,238 @@
+{
+  "font": {
+    "family": "\"Open Sans\", verdana, arial, sans-serif",
+    "size": "13px"
+  },
+  "cellPadDefault": "see plotly",
+  "widest": [
+    {
+      "col": 2,
+      "header": "Fuel (kg)<br>mean (90% CI)",
+      "widest": {
+        "v": "1953.1 [1153.9, 3069.2]",
+        "w": 163.8
+      },
+      "narrowest": {
+        "v": "4.4 [0.0, 8.8]",
+        "w": 89.5
+      }
+    },
+    {
+      "col": 5,
+      "header": "Fuel (%)<br>mean (90% CI)",
+      "widest": {
+        "v": "8.700 [4.947, 12.853]",
+        "w": 147.3
+      },
+      "narrowest": {
+        "v": "3.648 [2.147, 5.371]",
+        "w": 139
+      }
+    },
+    {
+      "col": 8,
+      "header": "Time (min)<br>mean (90% CI)",
+      "widest": {
+        "v": "17.80 [10.41, 28.31]",
+        "w": 139
+      },
+      "narrowest": {
+        "v": "4.12 [1.93, 6.56]",
+        "w": 114.3
+      }
+    },
+    {
+      "col": 11,
+      "header": "CO2 (kg)<br>mean (90% CI)",
+      "widest": {
+        "v": "12071.9 [6083.4, 18755.4]",
+        "w": 180.4
+      },
+      "narrowest": {
+        "v": "6.7 [1.6, 12.8]",
+        "w": 97.7
+      }
+    }
+  ],
+  "hdrW": [
+    [
+      102.3
+    ],
+    [
+      89.1
+    ],
+    [
+      59.2,
+      102.4
+    ],
+    [
+      59.2,
+      48.1
+    ],
+    [
+      59.2,
+      24.6
+    ],
+    [
+      57.4,
+      102.4
+    ],
+    [
+      57.4,
+      48.1
+    ],
+    [
+      57.4,
+      24.6
+    ],
+    [
+      72.8,
+      102.4
+    ],
+    [
+      72.8,
+      48.1
+    ],
+    [
+      72.8,
+      24.6
+    ],
+    [
+      59.8,
+      102.4
+    ],
+    [
+      59.8,
+      48.1
+    ],
+    [
+      59.8,
+      24.6
+    ],
+    [
+      75.4,
+      36.1
+    ]
+  ],
+  "visibleFullRows": 11,
+  "visibleList": [
+    "IFS HRES",
+    "IFS HRES",
+    "IFS HRES",
+    "IFS HRES",
+    "IFS HRES",
+    "GraphCast",
+    "GraphCast",
+    "GraphCast",
+    "GraphCast",
+    "GraphCast",
+    "Pangu-Weather"
+  ],
+  "partlyVisible": "Pangu-Weather",
+  "scrollKit": {
+    "top": 70,
+    "bottom": 636
+  },
+  "dec": [
+    {
+      "ci": 0,
+      "decimals": []
+    },
+    {
+      "ci": 1,
+      "decimals": [
+        0
+      ]
+    },
+    {
+      "ci": 2,
+      "decimals": [
+        1
+      ]
+    },
+    {
+      "ci": 3,
+      "decimals": [
+        1
+      ]
+    },
+    {
+      "ci": 4,
+      "decimals": [
+        1
+      ]
+    },
+    {
+      "ci": 5,
+      "decimals": [
+        3
+      ]
+    },
+    {
+      "ci": 6,
+      "decimals": [
+        3
+      ]
+    },
+    {
+      "ci": 7,
+      "decimals": [
+        3
+      ]
+    },
+    {
+      "ci": 8,
+      "decimals": [
+        2
+      ]
+    },
+    {
+      "ci": 9,
+      "decimals": [
+        2
+      ]
+    },
+    {
+      "ci": 10,
+      "decimals": [
+        2
+      ]
+    },
+    {
+      "ci": 11,
+      "decimals": [
+        1
+      ]
+    },
+    {
+      "ci": 12,
+      "decimals": [
+        1
+      ]
+    },
+    {
+      "ci": 13,
+      "decimals": [
+        1
+      ]
+    },
+    {
+      "ci": 14,
+      "decimals": [
+        0
+      ]
+    }
+  ],
+  "endsDot0": [
+    "7.4 [0.0, 21.5]",
+    "29.4 [6.9, 53.0]",
+    "64.8 [23.0, 115.5]",
+    "255.6 [35.0, 477.7]",
+    "4.4 [0.0, 8.8]",
+    "28.2 [13.0, 49.8]"
+  ],
+  "has294": "29.4 [6.9, 53.0]",
+  "zeroPct": [],
+  "pctBareZero": [],
+  "scrollTop": ""
+}

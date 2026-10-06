@@ -1,0 +1,138 @@
+{
+ "1184": {
+  "gd_width": 1168,
+  "n_core_quiet": [
+   96,
+   271
+  ],
+  "core_rgb": [
+   156.0,
+   156.0,
+   156.0
+  ],
+  "quiet_rgb": [
+   251.0,
+   251.0,
+   251.0
+  ],
+  "core_vs_quiet_mean": 2.64,
+  "core_vs_quiet_darkest10%_vs_lightest": 2.75,
+  "persistence_vs_bg_all": {
+   "n": 132,
+   "min": 1.07,
+   "median": 4.0
+  },
+  "persistence_vs_bg_dark_pixels(<190)": {
+   "n": 32,
+   "min": 1.07,
+   "median": 1.49
+  },
+  "band_vs_core_bg": 1.08,
+  "band_vs_quiet_bg": 2.44,
+  "lead12 h": {
+   "hits": [],
+   "entries": 5,
+   "visible": 5
+  },
+  "lead24 h": {
+   "hits": [],
+   "entries": 5,
+   "visible": 5
+  },
+  "lead48 h": {
+   "hits": [],
+   "entries": 5,
+   "visible": 5
+  },
+  "lead72 h": {
+   "hits": [],
+   "entries": 5,
+   "visible": 5
+  },
+  "lead120 h": {
+   "hits": [],
+   "entries": 5,
+   "visible": 5
+  },
+  "desync": [
+   "GraphCast, lead 24 h (m/s)",
+   "ERA5 (truth) wind (m/s)",
+   0,
+   "IFS HRES, lead 72 h (m/s)"
+  ],
+  "colorbar_title_box": [
+   1139.1658935546875,
+   1156.1658935546875,
+   1176
+  ],
+  "errors": []
+ },
+ "768": {
+  "gd_width": 768,
+  "n_core_quiet": [
+   96,
+   271
+  ],
+  "core_rgb": [
+   156.0,
+   156.0,
+   156.0
+  ],
+  "quiet_rgb": [
+   251.0,
+   251.0,
+   251.0
+  ],
+  "core_vs_quiet_mean": 2.64,
+  "core_vs_quiet_darkest10%_vs_lightest": 2.75,
+  "persistence_vs_bg_all": {
+   "n": 132,
+   "min": 1.07,
+   "median": 4.0
+  },
+  "persistence_vs_bg_dark_pixels(<190)": {
+   "n": 32,
+   "min": 1.07,
+   "median": 1.49
+  },
+  "band_vs_core_bg": 1.08,
+  "band_vs_quiet_bg": 2.44,
+  "lead12 h": {
+   "hits": [],
+   "entries": 5,
+   "visible": 5
+  },
+  "lead24 h": {
+   "hits": [],
+   "entries": 5,
+   "visible": 5
+  },
+  "lead48 h": {
+   "hits": [],
+   "entries": 5,
+   "visible": 5
+  },
+  "lead72 h": {
+   "hits": [],
+   "entries": 5,
+   "visible": 5
+  },
+  "lead120 h": {
+   "hits": [],
+   "entries": 5,
+   "visible": 5
+  },
+  "desync": [
+   "GraphCast, lead 24 h (m/s)",
+   "ERA5 (truth) wind (m/s)",
+   0,
+   "IFS HRES, lead 72 h (m/s)"
+  ],
+  "colorbar_title_box": [
+   739.165771484375,
+   756.165771484375,
+   776
+  ],
+  "errors": []
+ }
+}

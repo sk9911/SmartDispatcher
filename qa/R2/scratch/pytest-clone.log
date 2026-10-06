@@ -1,0 +1,50 @@
+============================= test session starts ==============================
+platform darwin -- Python 3.12.14, pytest-9.1.1, pluggy-1.6.0
+rootdir: /private/var/folders/y7/9h6hg8gd22gdfnv3l3_dfdrw0000gn/T/tmp.nH5olDMmot/regret
+configfile: pyproject.toml
+testpaths: tests, notebooks
+plugins: nbmake-1.5.5, zarr-3.4.0, platformdirs-4.12.2, playwright-0.9.0, base-url-2.1.0, anyio-4.15.1
+collected 304 items
+
+tests/test_compute.py ......                                             [  1%]
+tests/test_config.py ...........                                         [  5%]
+tests/test_fetch.py ............................                         [ 14%]
+tests/test_fig_headline.py ...................                           [ 21%]
+tests/test_fig_lead_regret.py ................                           [ 26%]
+tests/test_fig_sanity.py ...............                                 [ 31%]
+tests/test_fig_showcase_map.py ...........................               [ 40%]
+tests/test_fig_style.py ......                                           [ 42%]
+tests/test_fig_wind_error.py ......................                      [ 49%]
+tests/test_geostrophic.py ......s......                                  [ 53%]
+tests/test_offline.py ........                                           [ 56%]
+tests/test_physics_fixture.py ....                                       [ 57%]
+tests/test_planner.py ........                                           [ 60%]
+tests/test_regret.py .............                                       [ 64%]
+tests/test_replay.py .......                                             [ 66%]
+tests/test_report.py ......                                              [ 68%]
+tests/test_report_browser.py ....                                        [ 70%]
+tests/test_results_full.py .....                                         [ 71%]
+tests/test_sources.py .....................                              [ 78%]
+tests/test_stats.py .............                                        [ 82%]
+tests/test_types.py .......................                              [ 90%]
+tests/test_units.py .................                                    [ 96%]
+tests/test_winds.py ...........                                          [ 99%]
+notebooks/regret_report.ipynb .                                          [100%]
+
+=============================== warnings summary ===============================
+src/regret/fetch.py:25
+  /private/var/folders/y7/9h6hg8gd22gdfnv3l3_dfdrw0000gn/T/tmp.nH5olDMmot/regret/src/regret/fetch.py:25: DeprecationWarning: BloscShuffle.shuffle is deprecated; pass the string 'shuffle' instead.
+    SHUFFLE = BloscShuffle.shuffle  # byte shuffle
+
+tests/test_fetch.py: 210 warnings
+tests/test_geostrophic.py: 16 warnings
+tests/test_sources.py: 105 warnings
+  /private/var/folders/y7/9h6hg8gd22gdfnv3l3_dfdrw0000gn/T/tmp.nH5olDMmot/regret/.venv/lib/python3.12/site-packages/zarr/api/asynchronous.py:246: ZarrUserWarning: Consolidated metadata is currently not part in the Zarr format 3 specification. It may not be supported by other zarr implementations and may change in the future.
+    warnings.warn(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+
+Learn more about nbmake at https://github.com/treebeardtech/nbmake
+
+=========== 303 passed, 1 skipped, 332 warnings in 61.83s (0:01:01) ============
+REGRET_BLOCK_NETWORK=1 uv run pytest  65.45s user 17.33s system 131% cpu 1:03.03 total

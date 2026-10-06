@@ -1,0 +1,47 @@
+flights 110 sources ['graphcast', 'hres', 'neuralgcm', 'pangu', 'persistence'] leads [np.int64(12), np.int64(24), np.int64(48), np.int64(72), np.int64(120)]
+min departure 2020-01-06 00:00:00 regret>=0 True
+lead_h          12      24       48       72       120
+source                                                
+graphcast     39.44   38.05    50.46    63.31   153.10
+hres          41.03   42.35    60.37    99.69   250.53
+neuralgcm     43.97   36.61    50.02    63.98   182.10
+pangu         38.55   43.02    59.19    63.44   170.51
+persistence  528.53  818.72  1060.89  1153.86  1249.21
+pooled 12-24 h:
+ source
+graphcast       38.75
+neuralgcm       40.29
+pangu           40.78
+hres            41.69
+persistence    673.63
+rank (excl. persistence): 2 of 4
+120 h:
+ source
+graphcast       153.10
+pangu           170.51
+neuralgcm       182.10
+hres            250.53
+persistence    1249.21
+rank 120 (excl. persistence): 3 of 4
+sensitivity sources ['graphcast', 'hres', 'pangu', 'persistence'] n [110]
+12h-6h diff mean at 12-24 h, all sens sources: 23.97
+excl persistence: 31.98
+source
+graphcast      30.15
+hres           33.60
+pangu          32.20
+persistence    -0.07
+per lead diff:
+ lead_h        12    24    48    72    120
+source                                   
+graphcast    33.3  27.0  25.5  -6.0  -9.8
+hres         35.7  31.5  29.0  26.4 -21.4
+pangu        32.0  32.4  33.5   8.5   1.1
+persistence  -0.1  -0.1  -0.1  -0.1  -0.1
+core vs core_set max abs diff 0.013954511533938785
+ensemble members [25] rows 1100 beats 0 regret>=0 True
+lead_h         12     24     48     72      120
+choice                                         
+mean_robust  43.73  39.27  53.88  74.78  120.56
+p90_robust   45.00  40.13  58.60  85.89  195.66
+floor max abs diff 0.0 zero rows 162

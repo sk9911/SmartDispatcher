@@ -1,0 +1,66 @@
+[I 2026-10-01 14:29:07.428 ServerApp] jupyter_lsp | extension was successfully linked.
+[I 2026-10-01 14:29:07.429 ServerApp] jupyter_server_terminals | extension was successfully linked.
+[I 2026-10-01 14:29:07.431 ServerApp] jupyterlab | extension was successfully linked.
+[I 2026-10-01 14:29:07.446 ServerApp] notebook_shim | extension was successfully linked.
+[I 2026-10-01 14:29:07.465 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2026-10-01 14:29:07.466 ServerApp] jupyter_lsp | extension was successfully loaded.
+[I 2026-10-01 14:29:07.466 ServerApp] jupyter_server_terminals | extension was successfully loaded.
+[I 2026-10-01 14:29:07.467 LabApp] JupyterLab extension loaded from /Users/shreyas-atomionics/Documents/GitHub/DynamicDispatcher/.venv/lib/python3.12/site-packages/jupyterlab
+[I 2026-10-01 14:29:07.467 LabApp] JupyterLab application directory is /Users/shreyas-atomionics/Documents/GitHub/DynamicDispatcher/.venv/share/jupyter/lab
+[I 2026-10-01 14:29:07.467 LabApp] Extension Manager is 'pypi'.
+[I 2026-10-01 14:29:07.481 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2026-10-01 14:29:07.482 ServerApp] Serving notebooks from local directory: /Users/shreyas-atomionics/Documents/GitHub/DynamicDispatcher
+[I 2026-10-01 14:29:07.482 ServerApp] Jupyter Server 2.21.1 is running at:
+[I 2026-10-01 14:29:07.482 ServerApp] http://127.0.0.1:8888/lab?token=...
+[I 2026-10-01 14:29:07.482 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 2026-10-01 14:29:07.597 ServerApp] Skipped non-installed server(s): basedpyright, bash-language-server, dockerfile-language-server-nodejs, javascript-typescript-langserver, jedi-language-server, julia-language-server, pyrefly, pyright, python-language-server, python-lsp-server, r-languageserver, sql-language-server, texlab, typescript-language-server, unified-language-server, vscode-css-languageserver-bin, vscode-html-languageserver-bin, vscode-json-languageserver-bin, yaml-language-server
+[W 2026-10-01 14:29:12.943 ServerApp] Notebook qa/T25/scratch/check.ipynb is not trusted
+[W 2026-10-01 14:29:12.944 ServerApp] Notebook qa/T23/scratch/check.ipynb is not trusted
+[W 2026-10-01 14:29:12.945 ServerApp] Notebook qa/T19/scratch/check.ipynb is not trusted
+[I 2026-10-01 14:29:12.992 LabApp] Build is up to date
+[I 2026-10-01 14:29:13.035 ServerApp] Kernel started: 73b26332-dce9-4b9b-82fd-e29b9e2e8180
+[I 2026-10-01 14:29:13.038 ServerApp] Kernel started: 8d526a30-b989-442e-b1e7-cec4de0ffed7
+[I 2026-10-01 14:29:13.045 ServerApp] Kernel started: 32817b3e-4c04-4f71-8924-53238dc1edcb
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+[I 2026-10-01 14:29:13.243 ServerApp] Adapting from protocol version 5.3 (kernel 8d526a30-b989-442e-b1e7-cec4de0ffed7) to 5.4 (client).
+[I 2026-10-01 14:29:13.244 ServerApp] Connecting to kernel 8d526a30-b989-442e-b1e7-cec4de0ffed7.
+[W 2026-10-01 14:29:13.245 ServerApp] The websocket_ping_timeout (90000) cannot be longer than the websocket_ping_interval (30000).
+    Setting websocket_ping_timeout=30000
+[I 2026-10-01 14:29:13.250 ServerApp] Starting buffering for 8d526a30-b989-442e-b1e7-cec4de0ffed7:60b730bc-8ed2-4f96-8680-3569bdb3cd7a
+[I 2026-10-01 14:29:13.260 ServerApp] Adapting from protocol version 5.3 (kernel 73b26332-dce9-4b9b-82fd-e29b9e2e8180) to 5.4 (client).
+[I 2026-10-01 14:29:13.260 ServerApp] Connecting to kernel 73b26332-dce9-4b9b-82fd-e29b9e2e8180.
+[I 2026-10-01 14:29:13.276 ServerApp] Adapting from protocol version 5.3 (kernel 8d526a30-b989-442e-b1e7-cec4de0ffed7) to 5.4 (client).
+[I 2026-10-01 14:29:13.276 ServerApp] Connecting to kernel 8d526a30-b989-442e-b1e7-cec4de0ffed7.
+[I 2026-10-01 14:29:13.289 ServerApp] Adapting from protocol version 5.3 (kernel 32817b3e-4c04-4f71-8924-53238dc1edcb) to 5.4 (client).
+[I 2026-10-01 14:29:13.290 ServerApp] Connecting to kernel 32817b3e-4c04-4f71-8924-53238dc1edcb.
+[I 2026-10-01 14:29:13.294 ServerApp] Starting buffering for 32817b3e-4c04-4f71-8924-53238dc1edcb:82ded2ce-0f44-47e5-83bd-00b7e9748d81
+[I 2026-10-01 14:29:13.304 ServerApp] Adapting from protocol version 5.3 (kernel 32817b3e-4c04-4f71-8924-53238dc1edcb) to 5.4 (client).
+[I 2026-10-01 14:29:13.304 ServerApp] Connecting to kernel 32817b3e-4c04-4f71-8924-53238dc1edcb.
+[I 2026-10-01 14:29:13.315 ServerApp] Adapting from protocol version 5.3 (kernel 32817b3e-4c04-4f71-8924-53238dc1edcb) to 5.4 (client).
+[I 2026-10-01 14:29:13.316 ServerApp] Connecting to kernel 32817b3e-4c04-4f71-8924-53238dc1edcb.
+[W 2026-10-01 14:29:14.041 ServerApp] Notebook qa/B5/scratch/check.ipynb is not trusted
+[I 2026-10-01 14:29:14.102 ServerApp] Kernel started: d6a4b55b-b4be-4e99-9c2c-a7801cfbd107
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+[I 2026-10-01 14:29:14.252 ServerApp] Adapting from protocol version 5.3 (kernel d6a4b55b-b4be-4e99-9c2c-a7801cfbd107) to 5.4 (client).
+[I 2026-10-01 14:29:14.253 ServerApp] Connecting to kernel d6a4b55b-b4be-4e99-9c2c-a7801cfbd107.
+[I 2026-10-01 14:29:46.471 ServerApp] Starting buffering for 32817b3e-4c04-4f71-8924-53238dc1edcb:5720f829-72fa-45c4-b539-912c34e15701
+[I 2026-10-01 14:30:06.394 ServerApp] Starting buffering for 8d526a30-b989-442e-b1e7-cec4de0ffed7:944187e3-fb1b-4984-80ec-257bd99e316c
+[I 2026-10-01 14:30:16.432 ServerApp] Starting buffering for 73b26332-dce9-4b9b-82fd-e29b9e2e8180:cec56f39-d207-43bd-a571-8e8ab29b0d14
+[I 2026-10-01 14:31:14.081 ServerApp] Saving file at /qa/B5/scratch/check.ipynb
+[I 2026-10-01 14:31:14.932 ServerApp] Starting buffering for d6a4b55b-b4be-4e99-9c2c-a7801cfbd107:cbe96691-64c1-487e-b912-8e442cffca0d
+[C 2026-10-01 14:32:27.234 ServerApp] received signal 15, stopping
+[C 2026-10-01 14:32:27.235 ServerApp] received signal 15, stopping
+[I 2026-10-01 14:32:27.235 ServerApp] Shutting down 4 extensions
+[I 2026-10-01 14:32:27.235 ServerApp] Shutting down 4 extensions
+[I 2026-10-01 14:32:27.235 ServerApp] Shutting down 4 kernels
+[I 2026-10-01 14:32:27.235 ServerApp] Shutting down 4 kernels
+[I 2026-10-01 14:32:27.236 ServerApp] Kernel shutdown: 32817b3e-4c04-4f71-8924-53238dc1edcb
+[I 2026-10-01 14:32:27.236 ServerApp] Kernel shutdown: 73b26332-dce9-4b9b-82fd-e29b9e2e8180
+[I 2026-10-01 14:32:27.236 ServerApp] Kernel shutdown: 8d526a30-b989-442e-b1e7-cec4de0ffed7
+[I 2026-10-01 14:32:27.236 ServerApp] Kernel shutdown: d6a4b55b-b4be-4e99-9c2c-a7801cfbd107
+[I 2026-10-01 14:32:27.237 ServerApp] Kernel shutdown: 32817b3e-4c04-4f71-8924-53238dc1edcb
+[I 2026-10-01 14:32:27.237 ServerApp] Kernel shutdown: 73b26332-dce9-4b9b-82fd-e29b9e2e8180
+[I 2026-10-01 14:32:27.237 ServerApp] Kernel shutdown: 8d526a30-b989-442e-b1e7-cec4de0ffed7
+[I 2026-10-01 14:32:27.237 ServerApp] Kernel shutdown: d6a4b55b-b4be-4e99-9c2c-a7801cfbd107

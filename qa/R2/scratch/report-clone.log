@@ -1,0 +1,2 @@
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+REGRET_BLOCK_NETWORK=1 uv run regret report  4.72s user 0.41s system 92% cpu 5.525 total

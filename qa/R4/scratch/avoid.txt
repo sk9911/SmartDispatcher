@@ -1,0 +1,7 @@
+terms: ['Trip', 'sortie', 'route', 'Example flight', 'demo case', 'Route', 'trajectory', 'flight plan', 'Perfect-forecast plan', 'ERA5 plan', 'Optimal plan', 'perfect plan', 'oracle', 'Negative regret', 'Analysis', 'observations', 'actuals', 'Model', 'provider', 'Climatology', 'naive forecast', 'Horizon', 'forecast step', 'Forecast skill', 'RMSE', 'Balance error', 'physical consistency score', 'Simulation', 'evaluation', 'Score', 'objective', 'Penalty', 'loss', 'error', 'Hit rate', 'win rate']
+== qa/R4/scratch/s68-fixture.json: '6. Stretch: geostrophic balance at 250 hPa¶' .. '9. Method, assumptions and limitations¶', 4043 chars
+  phrase count: 2
+  "forecast models": 0
+== qa/R4/scratch/s68-full.json: '6. Stretch: geostrophic balance at 250 hPa¶' .. '9. Method, assumptions and limitations¶', 4227 chars
+  phrase count: 2
+  "forecast models": 0
